@@ -662,6 +662,194 @@ body::after {
 }
 
 /* ========================================
+   RELATED ARTICLES
+   ======================================== */
+.related-articles {
+  margin-top: 56px;
+  padding-top: 40px;
+  border-top: 1px solid var(--border);
+}
+
+.related-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  margin-bottom: 6px;
+  color: var(--text-primary);
+}
+
+.related-subtitle {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-bottom: 24px;
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.related-card {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  transition: var(--transition);
+  text-decoration: none;
+  align-items: center;
+}
+
+.related-card:hover {
+  border-color: var(--border-accent);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  background: var(--bg-card-hover);
+}
+
+.related-image {
+  width: 100px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+}
+
+.related-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.related-tag {
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--accent-secondary);
+  background: rgba(139, 92, 246, 0.08);
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  align-self: flex-start;
+}
+
+.related-body h3 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--text-primary);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ========================================
+   PRIVACY PAGE
+   ======================================== */
+.privacy-wrapper {
+  max-width: var(--max-w-article);
+  margin: 0 auto;
+  padding: 56px var(--gutter) 80px;
+  position: relative;
+  z-index: 1;
+}
+
+.privacy-header {
+  margin-bottom: 40px;
+}
+
+.privacy-header h1 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, #fafafa 20%, #c4b5fd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.privacy-header .lead {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.privacy-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.privacy-section h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: var(--text-primary);
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.privacy-section p {
+  color: var(--text-secondary);
+  line-height: 1.85;
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+}
+
+.privacy-section ul {
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+
+.privacy-section li {
+  color: var(--text-secondary);
+  font-size: 0.93rem;
+  line-height: 1.8;
+  margin-bottom: 8px;
+}
+
+.privacy-section a {
+  color: var(--accent-secondary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: var(--transition-fast);
+}
+
+.privacy-section a:hover {
+  color: var(--accent-tertiary);
+}
+
+.privacy-highlight {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent-primary);
+  border-radius: var(--radius-md);
+  padding: 20px 24px;
+  margin: 16px 0;
+}
+
+.privacy-highlight h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.privacy-highlight p {
+  margin-bottom: 6px;
+}
+
+.privacy-highlight ul {
+  padding-left: 18px;
+}
+
+/* ========================================
    ABOUT PAGE
    ======================================== */
 .about-wrapper {
@@ -806,6 +994,32 @@ body::after {
   text-decoration: underline;
 }
 
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+.footer-links a {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--accent-secondary);
+  transition: var(--transition-fast);
+}
+
+.footer-links a:hover {
+  color: var(--accent-tertiary);
+  text-decoration: underline;
+}
+
+.footer-divider {
+  color: var(--text-dim);
+  font-size: 0.8rem;
+}
+
 .footer-tagline {
   margin-top: 10px;
   font-size: 0.72rem;
@@ -868,6 +1082,15 @@ body::after {
   .about-features {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .related-image {
+    width: 80px;
+    height: 64px;
+  }
+
+  .related-body h3 {
+    font-size: 0.82rem;
+  }
 }
 
 @media (max-width: 420px) {
@@ -881,6 +1104,21 @@ body::after {
 
   .about-features {
     grid-template-columns: 1fr;
+  }
+
+  .navbar nav a {
+    font-size: 0.75rem;
+    padding: 5px 8px;
+  }
+
+  .related-card {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .related-image {
+    width: 100%;
+    height: 140px;
   }
 }
 
@@ -915,6 +1153,8 @@ body::after {
 .card:nth-child(3) { animation-delay: 0.15s; }
 .card:nth-child(4) { animation-delay: 0.2s; }
 .card:nth-child(5) { animation-delay: 0.25s; }
+.card:nth-child(6) { animation-delay: 0.3s; }
+.card:nth-child(7) { animation-delay: 0.35s; }
 
 .article-hero-image {
   animation: fadeIn 0.5s var(--ease) both;
@@ -927,6 +1167,17 @@ body::after {
 .article-body {
   animation: fadeInUp 0.6s var(--ease) 0.2s both;
 }
+
+.related-articles {
+  animation: fadeInUp 0.5s var(--ease) 0.3s both;
+}
+
+.related-card {
+  animation: fadeInUp 0.4s var(--ease) both;
+}
+.related-card:nth-child(1) { animation-delay: 0.35s; }
+.related-card:nth-child(2) { animation-delay: 0.4s; }
+.related-card:nth-child(3) { animation-delay: 0.45s; }
 
 .about-header {
   animation: fadeInUp 0.6s var(--ease) both;
@@ -945,6 +1196,19 @@ body::after {
 .about-feature:nth-child(2) { animation-delay: 0.15s; }
 .about-feature:nth-child(3) { animation-delay: 0.2s; }
 .about-feature:nth-child(4) { animation-delay: 0.25s; }
+
+.privacy-header {
+  animation: fadeInUp 0.6s var(--ease) both;
+}
+
+.privacy-section {
+  animation: fadeInUp 0.5s var(--ease) both;
+}
+.privacy-section:nth-child(1) { animation-delay: 0.05s; }
+.privacy-section:nth-child(2) { animation-delay: 0.1s; }
+.privacy-section:nth-child(3) { animation-delay: 0.15s; }
+.privacy-section:nth-child(4) { animation-delay: 0.2s; }
+.privacy-section:nth-child(5) { animation-delay: 0.25s; }
 
 /* ========================================
    SCROLLBAR
