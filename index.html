@@ -1,169 +1,326 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Cerita Harian — Bacaan ringan 5 menit seputar kehidupan, kebiasaan, motivasi, dan tips belajar yang bikin harimu lebih bermakna.">
-  <meta name="keywords" content="artikel, motivasi, kebiasaan sehari-hari, tips belajar, kehidupan, self improvement, produktivitas">
-  <meta name="author" content="Cerita Harian">
-  <title>Cerita Harian — Bacaan Ringan yang Bikin Betah</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- kode adsense -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3079804302150146"
-     crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextStep — Motivasi, Skill, Teknologi & Cara Penghasilan Online</title>
+    <meta name="description" content="NextStep: platform edukasi digital untuk menemukan langkah selanjutnya dalam hidupmu. Artikel motivasi, skill, teknologi, dan cara penghasilan online yang realistis.">
+    <meta name="keywords" content="motivasi hidup, skill digital, teknologi AI, cari uang online, produktivitas, nextstep blog">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google AdSense Placeholder -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3079804302150146" crossorigin="anonymous"></script>
 </head>
 <body>
-
-  <!-- NAVBAR -->
-  <header class="navbar" id="navbar">
-    <div class="navbar-inner">
-      <a href="index.html" class="logo">Cerita Harian</a>
-      <nav>
-        <a href="index.html" class="active" id="nav-home">Home</a>
-        <a href="about.html" id="nav-about">About</a>
-        <a href="privacy.html" id="nav-privacy">Privasi</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="container">
-
-    <!-- HERO -->
-    <section class="hero" id="hero">
-      <span class="hero-badge">✦ Bacaan Harian Favoritmu</span>
-      <h1>Hal Kecil yang Sering Terlewat, Padahal Bisa Ubah Segalanya</h1>
-      <p>Kumpulan cerita ringan soal hidup, belajar, dan kebiasaan sehari-hari. Singkat tapi nampol.</p>
-      <span class="hero-tagline">Dibaca 5 menit, efeknya bisa lama ☕</span>
-    </section>
-
-    <!-- iklan di sini -->
-    <div class="ad-slot" id="ad-home-top">
-      <!-- AD SLOT: HOME BANNER ATAS — Ganti dengan kode Google AdSense -->
-      <span>Iklan</span>
-    </div>
-
-    <!-- ARTICLES SECTION -->
-    <div class="section-label">
-      <h2>Artikel Terbaru</h2>
-      <span class="count">7 artikel</span>
-    </div>
-
-    <section class="cards-grid" id="articles">
-
-      <article class="card" id="card-7">
-        <img src="images/artikel7.png" alt="Seseorang berjalan di jalan setapak hutan dengan cahaya pagi" class="card-image" loading="lazy">
-        <div class="card-body">
-          <div class="card-meta">
-            <span class="card-tag">Kesehatan</span>
-            <span class="card-read-time">5 menit baca</span>
-          </div>
-          <h2>Terapi Gratis yang Sering Diremehkan — Padahal Efeknya Lebih Kuat dari Rebahan Seharian</h2>
-          <p>Kamu nggak butuh liburan mahal untuk recharge. Ada satu aktivitas gratis yang terbukti bikin mental lebih sehat — cuma butuh 20 menit...</p>
-          <a href="artikel7.html" class="btn" id="read-7">Baca Selengkapnya <span class="btn-arrow">→</span></a>
+            <nav class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">N</div>
+                NextStep
+            </a>
+            <button class="menu-toggle" id="mobile-menu-toggle"><span></span><span></span><span></span></button>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link active" id="nav-home">Home</a>
+                <a href="mulai-dari-sini.html" class="nav-link nav-star" id="nav-start">Mulai Dari Sini &#11088;</a>
+                <a href="index.html#articles" class="nav-link" id="nav-artikel">Artikel</a>
+                <div class="nav-dropdown">
+                    <a class="nav-link nav-dropdown-toggle" id="nav-kategori">Kategori <span class="arrow">&#9660;</span></a>
+                    <div class="nav-dropdown-menu">
+                        <a href="index.html?cat=cuan">&#128184; Cuan</a>
+                        <a href="index.html?cat=motivasi">&#128293; Motivasi</a>
+                        <a href="index.html?cat=skill">&#128640; Skill</a>
+                        <a href="index.html?cat=teknologi">&#128187; Teknologi</a>
+                    </div>
+                </div>
+                <a href="about.html" class="nav-link" id="nav-about">About</a>
+                <a href="contact.html" class="nav-link" id="nav-contact">Contact</a>
+            </div>
         </div>
-      </article>
+    </nav>
 
-      <article class="card" id="card-6">
-        <img src="images/artikel6.png" alt="Seseorang menulis jurnal di meja dengan lampu hangat" class="card-image" loading="lazy">
-        <div class="card-body">
-          <div class="card-meta">
-            <span class="card-tag">Kesehatan Mental</span>
-            <span class="card-read-time">5 menit baca</span>
-          </div>
-          <h2>Cara Berhentinya Bukan Dipaksa — Cuma 5 Menit Nulis Ini, Otakmu Langsung Lega</h2>
-          <p>Overthinking bikin kamu stuck? Ada teknik 5 menit yang dipakai psikolog untuk menghentikan spiral pikiran negatif...</p>
-          <a href="artikel6.html" class="btn" id="read-6">Baca Selengkapnya <span class="btn-arrow">→</span></a>
+    <header class="hero">
+        <div class="container">
+            <span class="hero-badge">✦ Blog Edukasi Digital #1</span>
+            <h1>Temukan Langkah Selanjutnya<br><span class="gradient-text">dalam Hidupmu.</span></h1>
+            <p>Motivasi, skill, teknologi, dan cara penghasilan online — semua ada di sini. Artikel jujur tanpa hype, langsung ke intinya.</p>
+            <div class="search-container">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="articleSearch" class="search-input" placeholder="Cari artikel: motivasi, AI, freelance, skill...">
+            </div>
         </div>
-      </article>
+    </header>
 
-      <article class="card" id="card-1">
-        <img src="images/artikel1.png" alt="Seseorang stretching saat bangun pagi" class="card-image" loading="lazy">
-        <div class="card-body">
-          <div class="card-meta">
-            <span class="card-tag">Kebiasaan</span>
-            <span class="card-read-time">5 menit baca</span>
-          </div>
-          <h2>Gak Banyak yang Tau: Bangun Jam 5 Tanpa Melakukan Ini, Sama Aja Bohong</h2>
-          <p>Temanku selalu bangun jam 5 dan pamer di story. Tapi tiap sore selalu bilang "capek banget." Sampai aku tanya satu hal yang bikin dia diam...</p>
-          <a href="artikel1.html" class="btn" id="read-1">Baca Selengkapnya <span class="btn-arrow">→</span></a>
+    <main class="container">
+        <!-- Position Picker -->
+        <section class="position-picker">
+            <h2>Kamu lagi di posisi mana? 🤔</h2>
+            <p class="picker-sub">Pilih kondisimu sekarang, kami kasih artikel yang paling relevan.</p>
+            <div class="picker-grid">
+                <a href="index.html?cat=cuan" class="picker-btn" data-cat="cuan"><span>💸</span> Cari Uang</a>
+                <a href="index.html?cat=motivasi" class="picker-btn" data-cat="motivasi"><span>🔥</span> Butuh Motivasi</a>
+                <a href="index.html?cat=skill" class="picker-btn" data-cat="skill"><span>🚀</span> Mau Belajar Skill</a>
+                <a href="index.html?cat=teknologi" class="picker-btn" data-cat="teknologi"><span>💻</span> Teknologi &amp; AI</a>
+            </div>
+        </section>
+
+        <!-- Ad Slot Top -->
+        <div class="ad-slot">
+            Place your AdSense code here (Home Banner Top)
         </div>
-      </article>
 
-      <article class="card" id="card-2">
-        <img src="images/artikel2.png" alt="Buku terbuka dan kopi di meja" class="card-image" loading="lazy">
-        <div class="card-body">
-          <div class="card-meta">
-            <span class="card-tag">Belajar</span>
-            <span class="card-read-time">5 menit baca</span>
-          </div>
-          <h2>Tanpa Kamu Sadari, Orang yang Suka Baca Buku Diam-Diam Punya "Senjata" Ini</h2>
-          <p>Mereka bukan lebih pintar. Bukan lebih kaya. Tapi ada satu skill tersembunyi yang bikin mereka selalu lebih kalem dari yang lain...</p>
-          <a href="artikel2.html" class="btn" id="read-2">Baca Selengkapnya <span class="btn-arrow">→</span></a>
+        <section id="articles" class="section-padding">
+            <div class="section-header">
+                <h2>Artikel Terbaru <span style="color:var(--primary);font-size:0.9rem;font-weight:500;"> — 19 Artikel</span></h2>
+                <p>Update harian seputar dunia digital earning, skill, dan bisnis online.</p>
+            </div>
+
+            <div class="articles-grid" id="articleGrid">
+                <!-- Article 1 -->
+                <article class="article-card" data-title="cara dapet uang internet tanpa modal realistis" data-cat="cuan">
+                    <div class="card-image">
+                        <img src="images/artikel1.png" alt="Cara dapet uang online">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">Tips Cuan</span>
+                        <h3 class="card-title">Cara Dapet Uang dari Internet Tanpa Modal (Realistis)</h3>
+                        <p class="card-excerpt">Mau tau cara dapet uang dari internet tanpa modal? Cek panduan realistis buat Gen Z di sini. No tipu-tipu, pure cuan!</p>
+                        <div class="card-footer">
+                            <a href="artikel1.html" class="read-more">Baca Sekarang <i>→</i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="article-card" data-title="website penghasil uang yang jarang diketahui">
+                    <div class="card-image">
+                        <img src="images/artikel2.png" alt="Website penghasil uang">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">Website</span>
+                        <h3 class="card-title">Website Penghasil Uang yang Jarang Diketahui</h3>
+                        <p class="card-excerpt">Nggak cuma Shopee atau TikTok, ada banyak website penghasil uang lain yang jarang orang tau tapi beneran bayar. Spill di sini!</p>
+                        <div class="card-footer">
+                            <a href="artikel2.html" class="read-more">Baca Sekarang <i>→</i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="article-card" data-title="kesalahan fatal pemula cari uang online">
+                    <div class="card-image">
+                        <img src="images/artikel3.png" alt="Kesalahan pemula">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">Edukasi</span>
+                        <h3 class="card-title">Kesalahan Fatal Pemula Cari Uang Online</h3>
+                        <p class="card-excerpt">Banyak yang gagal bukan karena nggak bisa, tapi karena salah strategi. Hindari 5 kesalahan fatal ini!</p>
+                        <div class="card-footer">
+                            <a href="artikel3.html" class="read-more">Baca Sekarang <i>→</i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 4 -->
+                <article class="article-card" data-title="strategi cuan harian dari hp">
+                    <div class="card-image">
+                        <img src="images/artikel4.png" alt="Cuan via HP">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">Mobile</span>
+                        <h3 class="card-title">Strategi Cuan Harian dari HP</h3>
+                        <p class="card-excerpt">HP kalian jangan cuma dipake scroll doang. Ini strategi jitu buat dapet uang jajan harian bermodal smartphone.</p>
+                        <div class="card-footer">
+                            <a href="artikel4.html" class="read-more">Baca Sekarang <i>→</i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 5 -->
+                <article class="article-card" data-title="rahasia orang bisa dapet dollar dari website">
+                    <div class="card-image">
+                        <img src="images/artikel5.png" alt="Dollar website">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">Blogging</span>
+                        <h3 class="card-title">Rahasia Orang Bisa Dapet Dollar dari Website</h3>
+                        <p class="card-excerpt">Penasaran gimana caranya website bisa ngasilin dollar tiap bulan? Bocoran rahasia industri media digital yang wajib kalian tau.</p>
+                        <div class="card-footer">
+                            <a href="artikel5.html" class="read-more">Baca Sekarang <i>→</i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 6 -->
+                <article class="article-card" data-title="panduan lengkap monetisasi blog untuk pemula">
+                    <div class="card-image">
+                        <img src="images/artikel6.png" alt="Monetisasi blog">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">Panduan</span>
+                        <h3 class="card-title">Panduan Lengkap Monetisasi Blog untuk Pemula</h3>
+                        <p class="card-excerpt">Punya blog tapi belum ngasilin duit? Ini panduan lengkap cara monetisasi blog dari nol sampe dapet AdSense.</p>
+                        <div class="card-footer">
+                            <a href="artikel6.html" class="read-more">Baca Sekarang <i>→</i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 7 -->
+                <article class="article-card" data-title="skill digital paling dicari brand besar gratis freelance" data-cat="skill">
+                    <div class="card-image">
+                        <img src="images/artikel7.png" alt="Skill digital paling dicari" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">Skill & Karir</span>
+                        <h3 class="card-title">5 Skill Digital Paling Dicari Brand Besar — Belajarnya GRATIS!</h3>
+                        <p class="card-excerpt">Nggak butuh gelar mahal atau kursus seharga laptop. 5 skill ini langsung dicari di pasar dan bisa dipelajari dalam 30 hari.</p>
+                        <div class="card-footer">
+                            <a href="artikel7.html" class="read-more">Baca Sekarang <i>→</i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 8 -->
+                <article class="article-card" data-title="passive income jual foto shutterstock adobe stock getty images" data-cat="cuan">
+                    <div class="card-image">
+                        <img src="images/artikel8.png" alt="Jual foto Shutterstock passive income" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">Passive Income</span>
+                        <h3 class="card-title">Passive Income dari Jual Foto di Shutterstock — Modal Kamera HP!</h3>
+                        <p class="card-excerpt">Foto di galeri HP kalian bisa dijual dan ngasilin dollar tiap bulan. Ini panduan lengkap cara jual foto di stock platform global.</p>
+                        <div class="card-footer">
+                            <a href="artikel8.html" class="read-more">Baca Sekarang <i>→</i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 9 -->
+                <article class="article-card" data-title="dropship tanpa modal stok jualan online pemula 2026" data-cat="cuan">
+                    <div class="card-image">
+                        <img src="images/artikel9.png" alt="Panduan dropship 2026" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">Bisnis Online</span>
+                        <h3 class="card-title">Jualan Tanpa Modal & Stok: Panduan Dropship 2026 untuk Pemula</h3>
+                        <p class="card-excerpt">Pengen bisnis tapi nggak punya modal? Dropship adalah jawabannya. Panduan lengkap start dari nol sampai profit pertama.</p>
+                        <div class="card-footer">
+                            <a href="artikel9.html" class="read-more">Baca Sekarang <i>→</i></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Ad Slot Bottom -->
+        <div class="ad-slot" style="min-height: 250px;">
+            Place your AdSense code here (Home Banner Bottom Large)
         </div>
-      </article>
+    </main>
 
-      <article class="card" id="card-3">
-        <img src="images/artikel3.png" alt="Timer Pomodoro di meja belajar" class="card-image" loading="lazy">
-        <div class="card-body">
-          <div class="card-meta">
-            <span class="card-tag">Belajar</span>
-            <span class="card-read-time">5 menit baca</span>
-          </div>
-          <h2>Ternyata Ini Alasan Kamu Belajar 3 Jam Tapi Nggak Masuk — Solusinya Cuma 25 Menit</h2>
-          <p>Adikku belajar 3 jam tapi pas latihan soal, blank. Aku cuma tanya: "HP-mu di mana selama belajar?" Dia diam...</p>
-          <a href="artikel3.html" class="btn" id="read-3">Baca Selengkapnya <span class="btn-arrow">→</span></a>
+            <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="index.html" class="logo"><div class="logo-icon">N</div>NextStep</a>
+                <p>Temukan langkah selanjutnya dalam hidupmu. Platform edukasi digital untuk motivasi, skill, teknologi, dan penghasilan online.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigasi</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="mulai-dari-sini.html">Mulai Dari Sini</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Kategori</h4>
+                <ul>
+                    <li><a href="index.html?cat=cuan">Cuan</a></li>
+                    <li><a href="index.html?cat=motivasi">Motivasi</a></li>
+                    <li><a href="index.html?cat=skill">Skill</a></li>
+                    <li><a href="index.html?cat=teknologi">Teknologi</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                </ul>
+            </div>
         </div>
-      </article>
-
-      <article class="card" id="card-4">
-        <img src="images/artikel4.png" alt="Siluet orang di atas tebing saat sunset" class="card-image" loading="lazy">
-        <div class="card-body">
-          <div class="card-meta">
-            <span class="card-tag">Motivasi</span>
-            <span class="card-read-time">5 menit baca</span>
-          </div>
-          <h2>Kamu Bukan Malas — Otakmu Cuma Butuh Satu Hal Ini, dan Nggak Ada yang Pernah Kasih Tau</h2>
-          <p>Kalau kamu emang malas, kenapa pernah ada hari di mana kamu semangat banget? Ada penjelasan ilmiahnya...</p>
-          <a href="artikel4.html" class="btn" id="read-4">Baca Selengkapnya <span class="btn-arrow">→</span></a>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 NextStep. All rights reserved.</p>
+            <p>Temukan langkah selanjutnya dalam hidupmu.</p>
         </div>
-      </article>
+    </footer>
 
-      <article class="card" id="card-5">
-        <img src="images/artikel5.png" alt="Notebook di atas meja tidur dengan lampu warm" class="card-image" loading="lazy">
-        <div class="card-body">
-          <div class="card-meta">
-            <span class="card-tag">Kehidupan</span>
-            <span class="card-read-time">5 menit baca</span>
-          </div>
-          <h2>Aku Coba 1 Kebiasaan Ini Selama 30 Hari Sebelum Tidur — Hidupku Nggak Sama Lagi</h2>
-          <p>Beberapa bulan lalu malamku selalu sama: scroll HP sampai merem. Sampai aku coba 1 hal simpel ini. Dan semuanya berubah...</p>
-          <a href="artikel5.html" class="btn" id="read-5">Baca Selengkapnya <span class="btn-arrow">→</span></a>
-        </div>
-      </article>
+    <script>
+        var _mt = document.getElementById('mobile-menu-toggle');
+        var _nl = document.querySelector('.nav-links');
+        if (_mt && _nl) {
+            _mt.addEventListener('click', function() { 
+                _nl.classList.toggle('active'); 
+                _mt.classList.toggle('active'); 
+            });
+            
+            // Handle Dropdown Toggles
+            document.querySelectorAll('.nav-dropdown-toggle').forEach(function(toggle) {
+                toggle.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    var parent = toggle.parentElement;
+                    
+                    // Close other dropdowns
+                    document.querySelectorAll('.nav-dropdown').forEach(function(d) {
+                        if (d !== parent) d.classList.remove('active');
+                    });
+                    
+                    parent.classList.toggle('active');
+                });
+            });
 
-    </section>
+            // Handle All Link Clicks
+            document.querySelectorAll('.nav-links a').forEach(function(link) {
+                link.addEventListener('click', function(e) {
+                    // Only close if it's NOT a dropdown toggle
+                    if (!link.classList.contains('nav-dropdown-toggle')) {
+                        _nl.classList.remove('active');
+                        _mt.classList.remove('active');
+                        document.querySelectorAll('.nav-dropdown').forEach(function(d) {
+                            d.classList.remove('active');
+                        });
+                    }
+                });
+            });
 
-    <!-- iklan di sini -->
-    <div class="ad-slot" id="ad-home-bottom">
-      <!-- AD SLOT: HOME BANNER BAWAH — Ganti dengan kode Google AdSense -->
-      <span>Iklan</span>
-    </div>
+            // Close when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!e.target.closest('.nav-dropdown')) {
+                    document.querySelectorAll('.nav-dropdown').forEach(function(d) {
+                        d.classList.remove('active');
+                    });
+                }
+            });
+        }
 
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="footer" id="footer">
-    <div class="footer-inner">
-      <div class="footer-brand">Cerita Harian</div>
-      <p>&copy; 2026 Cerita Harian — Bacaan ringan untuk jiwa yang haus inspirasi.</p>
-      <div class="footer-links">
-        <a href="about.html">About</a>
-        <span class="footer-divider">·</span>
-        <a href="privacy.html">Kebijakan Privasi</a>
-      </div>
-      <p class="footer-tagline">"Dibaca 5 menit, efeknya bisa lama."</p>
-    </div>
-  </footer>
-
+        var _cat = new URLSearchParams(window.location.search).get('cat');
+        if (_cat) {
+            document.querySelectorAll('.article-card').forEach(function(c) {
+                if (c.getAttribute('data-cat') !== _cat) c.style.display = 'none';
+            });
+            var btn = document.querySelector('.picker-btn[data-cat="' + _cat + '"]');
+            if (btn) btn.classList.add('active-filter');
+        }
+        var _si = document.getElementById('articleSearch');
+        if (_si) {
+            _si.addEventListener('input', function(e) {
+                var t = e.target.value.toLowerCase();
+                document.querySelectorAll('.article-card').forEach(function(c) {
+                    c.style.display = (c.getAttribute('data-title') || '').toLowerCase().includes(t) ? '' : 'none';
+                });
+            });
+        }
+    </script>
 </body>
 </html>
