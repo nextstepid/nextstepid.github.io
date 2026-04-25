@@ -6,9 +6,12 @@
     <title>Cara Dapet Uang dari Internet Tanpa Modal (Realistis) - NextStep</title>
     <meta name="description" content="Mau tau cara dapet uang dari internet tanpa modal? Cek panduan realistis buat Gen Z di sini. No tipu-tipu, pure cuan!">
     <link rel="stylesheet" href="style.css">
+
+    <!-- Google AdSense - Script Utama -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3079804302150146" crossorigin="anonymous"></script>
 </head>
 <body>
-            <nav class="navbar">
+    <nav class="navbar">
         <div class="container nav-content">
             <a href="index.html" class="logo">
                 <div class="logo-icon">N</div>
@@ -42,6 +45,19 @@
             </a>
         </nav>
 
+        <!-- Google AdSense - Banner Atas Artikel -->
+        <div class="ad-slot" style="margin-bottom: 2rem; text-align: center;">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-3079804302150146"
+                 data-ad-slot="GANTI_DENGAN_SLOT_ID"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
         <header class="article-header">
             <div class="article-meta-top">
                 <span class="card-tag">Tips Cuan</span>
@@ -59,6 +75,19 @@
             <p><strong>Halo sobat cuan!</strong> Pernah nggak sih kalian scrolling TikTok terus liat orang pamer saldo atau bilang "Work from home dapet 10 juta sebulan"? Jujur, pasti langsung kepikiran "Ih, gimana caranya?" tapi di saat yang sama juga skeptis, "Pasti pake modal gede nih" atau "Ah, palingan scam."</p>
 
             <p>Tenang, gue di sini bukan mau jualan kursus atau nyuruh kalian join MLM. Kita bakal bahas cara yang <strong>beneran realistis</strong> buat kalian yang pengen dapet income tambahan tanpa harus keluar modal sepeserpun. Cuma butuh HP, kuota, dan yang paling penting: NIAT.</p>
+
+            <!-- Google AdSense - Tengah Artikel -->
+            <div class="ad-slot" style="margin: 2.5rem 0; text-align: center;">
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-fb+5w+4e-db+86"
+                     data-ad-client="ca-pub-3079804302150146"
+                     data-ad-slot="GANTI_DENGAN_SLOT_ID"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
 
             <h2>1. Jadi Freelancer Content Writer</h2>
             <p>Kalo kalian hobi nulis atau minimal bisa ngerangkai kata-kata yang nggak kaku, jualan jasa nulis itu cuan banget. Banyak website, brand, atau blog yang butuh artikel setiap hari. Kalian nggak butuh modal apa-apa selain skill nulis.</p>
@@ -81,12 +110,21 @@
             <p>Mulai aja dulu dari yang paling kalian suka. Konsistensi adalah kunci. Semangat cari cuan!</p>
         </article>
 
-        <section class="ad-slot">
-            Place your AdSense code here (Bottom)
-        </section>
+        <!-- Google AdSense - Bawah Artikel -->
+        <div class="ad-slot" style="margin-top: 3rem; text-align: center;">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-3079804302150146"
+                 data-ad-slot="GANTI_DENGAN_SLOT_ID"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
     </main>
 
-            <footer>
+    <footer>
         <div class="container footer-content">
             <div class="footer-brand">
                 <a href="index.html" class="logo"><div class="logo-icon">N</div>NextStep</a>
@@ -124,8 +162,6 @@
         </div>
     </footer>
 
-    
-
     <script>
         var _mt = document.getElementById('mobile-menu-toggle');
         var _nl = document.querySelector('.nav-links');
@@ -135,26 +171,20 @@
                 _mt.classList.toggle('active'); 
             });
             
-            // Handle Dropdown Toggles
             document.querySelectorAll('.nav-dropdown-toggle').forEach(function(toggle) {
                 toggle.addEventListener('click', function(e) {
                     e.preventDefault();
                     e.stopPropagation();
                     var parent = toggle.parentElement;
-                    
-                    // Close other dropdowns
                     document.querySelectorAll('.nav-dropdown').forEach(function(d) {
                         if (d !== parent) d.classList.remove('active');
                     });
-                    
                     parent.classList.toggle('active');
                 });
             });
 
-            // Handle All Link Clicks
             document.querySelectorAll('.nav-links a').forEach(function(link) {
                 link.addEventListener('click', function(e) {
-                    // Only close if it's NOT a dropdown toggle
                     if (!link.classList.contains('nav-dropdown-toggle')) {
                         _nl.classList.remove('active');
                         _mt.classList.remove('active');
@@ -165,31 +195,12 @@
                 });
             });
 
-            // Close when clicking outside
             document.addEventListener('click', function(e) {
                 if (!e.target.closest('.nav-dropdown')) {
                     document.querySelectorAll('.nav-dropdown').forEach(function(d) {
                         d.classList.remove('active');
                     });
                 }
-            });
-        }
-
-        var _cat = new URLSearchParams(window.location.search).get('cat');
-        if (_cat) {
-            document.querySelectorAll('.article-card').forEach(function(c) {
-                if (c.getAttribute('data-cat') !== _cat) c.style.display = 'none';
-            });
-            var btn = document.querySelector('.picker-btn[data-cat="' + _cat + '"]');
-            if (btn) btn.classList.add('active-filter');
-        }
-        var _si = document.getElementById('articleSearch');
-        if (_si) {
-            _si.addEventListener('input', function(e) {
-                var t = e.target.value.toLowerCase();
-                document.querySelectorAll('.article-card').forEach(function(c) {
-                    c.style.display = (c.getAttribute('data-title') || '').toLowerCase().includes(t) ? '' : 'none';
-                });
             });
         }
     </script>
